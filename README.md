@@ -10,7 +10,7 @@ e uso de funções.
 - [ ] Subtração
 - [ ] Multiplicação
 - [ ] Divisão
-- [ ] Menu interativo no terminal
+- [x] Menu interativo no terminal
 - [ ] Opção para sair do programa
 
 ## 🛠️ Tecnologias utilizadas
