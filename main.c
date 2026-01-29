@@ -11,6 +11,12 @@ void limparTela(){
     #endif
 }
 
+void pausar(){
+    printf("\nPressione ENTER para continuar...");
+    getchar();
+    getchar();
+}
+
 void mostrarMenu(){
     printf("\x1b[1;34m==========================================\x1b[0m\n");
     printf("\x1b[1;34m                CALCULADORA               \x1b[0m\n");
@@ -82,9 +88,11 @@ int main(){
             }
 
             printf("Resultado: %.2f\n", resultado);
+            pausar();
 
         }else if(opcao <=0 || opcao > 5){
             printf("Opcao invalida!\n");
+            pausar();
         }
 
     }while(opcao != 5);
