@@ -22,10 +22,6 @@ e uso de funções.
 
  A pasta do projeto contém :
 
--main.c: Contém o código.
--README.md: Este arquivo.
--.gitignore: Ignora arquivos compilados.
-
 - main.c: Contém o código.
 - README.md: Explicação do projeto.
 - .gitignore: Ignora arquivos compilados
