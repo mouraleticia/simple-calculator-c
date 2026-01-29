@@ -25,7 +25,7 @@ void mostrarMenu(){
     printf("\x1b[1;33m[2]\x1b[0m" " Subtracao\n");
     printf("\x1b[1;33m[3]\x1b[0m" " Multiplicacao\n");
     printf("\x1b[1;33m[4]\x1b[0m" " Divisao\n");
-    printf("\x1b[1;31m[5]\x1b[0m" " Sair\n");
+    printf("\x1b[1;33m[5]\x1b[0m" " Sair\n");
     printf("\x1b[1;34m------------------------------------------\x1b[0m\n");
     printf("\x1b[1;34m            Escolha uma opcao:            \x1b[0m\n");
 }
@@ -61,43 +61,43 @@ int main(){
         scanf("%d", &opcao);
 
         if(opcao >=1 && opcao <=4){
-            printf("Digite o primeiro numero: ");
+            printf("Digite o \x1b[1mprimeiro\x1b[0m numero: ");
             scanf("%f", &x);
 
-            printf("Digite o segundo numero: ");
+            printf("Digite o \x1b[1msegundo\x1b[0m numero: ");
             scanf("%f", &y);
 
             switch(opcao){
 
                 case 1:
-                resultado = soma(x,y);
-                break;
+                    resultado = soma(x,y);
+                    break;
 
                 case 2:
-                resultado = subtracao(x,y);
-                break;
+                    resultado = subtracao(x,y);
+                    break;
 
                 case 3:
-                resultado = multiplicacao(x,y);
-                break;
+                    resultado = multiplicacao(x,y);
+                    break;
 
                 case 4:
-                resultado = divisao(x,y);
-                break;
+                    resultado = divisao(x,y);
+                    break;
 
             }
 
-            printf("Resultado: %.2f\n", resultado);
+            printf("\x1b[1;32mResultado:\x1b[0m %.2f\n", resultado);
             pausar();
 
         }else if(opcao <=0 || opcao > 5){
-            printf("Opcao invalida!\n");
+            printf("\x1b[1;31mOpcao invalida!\x1b[0m\n");
             pausar();
         }
 
     }while(opcao != 5);
 
-    printf("Programa encerrado\n");
+    printf("\x1b[1;33mPrograma encerrado!\x1b[0m\n");
 
     return 0;
 }
