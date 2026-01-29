@@ -1,4 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+void limparTela(){
+    #if defined(_WIN32) || defined(_WIN64)
+        system("cls || clear");
+    #elif defined(__linux__) || defined(__unix__) || defined(__APPLE__)
+        system("clear");
+    #else
+        for(int i = 0; i < 50; i++) printf("\n");
+    #endif
+}
 
 void mostrarMenu(){
     printf("\x1b[1;34m==========================================\x1b[0m\n");
@@ -39,6 +50,7 @@ int main(){
     float x, y, resultado;
 
     do{
+        limparTela();
         mostrarMenu();
         scanf("%d", &opcao);
 
