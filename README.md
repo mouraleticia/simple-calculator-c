@@ -6,12 +6,12 @@ e uso de funções.
 
 ## 📍 Funcionalidades
 
-- [ ] Soma
-- [ ] Subtração
-- [ ] Multiplicação
-- [ ] Divisão
+- [x] Soma
+- [x] Subtração
+- [x] Multiplicação
+- [x] Divisão
 - [x] Menu interativo no terminal
-- [ ] Opção para sair do programa
+- [x] Opção para sair do programa
 
 ## 🛠️ Tecnologias utilizadas
 
